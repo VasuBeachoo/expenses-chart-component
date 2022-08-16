@@ -7,9 +7,20 @@ export const BalanceAmt = styled.p``;
 
 export const Heading = styled.p``;
 
-export const Box = styled.div``;
+export const Box = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+`;
 
-export const BalanceBox = styled.div``;
+export const BalanceBox = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+`;
 
 const Balance = ({ className }) => {
   return (
