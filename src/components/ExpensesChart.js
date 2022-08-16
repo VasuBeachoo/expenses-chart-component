@@ -9,6 +9,7 @@ export const ExpensesChartContainer = styled.div`
   align-items: center;
   gap: 1.5rem;
   width: clamp(20rem, 90vw, 35rem);
+  margin: 2rem;
 `;
 
 const ExpensesChart = ({ className }) => {

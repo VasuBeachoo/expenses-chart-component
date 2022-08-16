@@ -1,26 +1,42 @@
 import styled from "styled-components";
-import { mixinBlock } from "../mixins";
+import { mixinBlock, mixinHeading, mixinText } from "../mixins";
 
-export const MonthlyLabel = styled.p``;
+export const MonthlyLabel = styled.p`
+  ${mixinText}
+  margin: 0;
+`;
 
-export const MonthlyNet = styled.p``;
+export const MonthlyNet = styled.p`
+  ${mixinHeading}
+  font-size: 1.15rem;
+  margin: 0;
+`;
 
 export const MonthlyBox = styled.div`
+  align-self: flex-end;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
 `;
 
-export const TotalAmt = styled.h1``;
+export const TotalAmt = styled.h1`
+  ${mixinHeading}
+  font-size: clamp(2rem, 5vw, 2.25rem);
+  margin: 0;
+`;
 
-export const TotalLabel = styled.p``;
+export const TotalLabel = styled.p`
+  ${mixinText}
+  margin: 0;
+`;
 
 export const TotalBox = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  gap: 0.1rem;
 `;
 
 export const Box = styled.div`
@@ -33,9 +49,15 @@ export const Box = styled.div`
 
 export const Divider = styled.hr`
   width: 100%;
+  opacity: 0.3;
+  margin: 1.5rem 0;
 `;
 
-export const Heading = styled.h1``;
+export const Heading = styled.h1`
+  ${mixinHeading}
+  font-size: clamp(1.5rem, 4vw, 1.75rem);
+  margin: 0;
+`;
 
 export const ReportBox = styled.div`
   ${mixinBlock}
