@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { mixinBlock } from "../mixins";
 
 export const MonthlyLabel = styled.p``;
 
@@ -37,11 +38,13 @@ export const Divider = styled.hr`
 export const Heading = styled.h1``;
 
 export const ReportBox = styled.div`
+  ${mixinBlock}
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
+  background-color: var(--Very-pale-orange);
 `;
 
 const Report = ({ className }) => {

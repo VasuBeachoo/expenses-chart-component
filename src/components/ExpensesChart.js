@@ -7,7 +7,8 @@ export const ExpensesChartContainer = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 40%;
+  gap: 1.5rem;
+  width: clamp(20rem, 90vw, 35rem);
 `;
 
 const ExpensesChart = ({ className }) => {
