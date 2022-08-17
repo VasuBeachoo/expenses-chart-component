@@ -2,7 +2,8 @@ import { css } from "styled-components";
 
 export const mixinBlock = css`
   border-radius: 1rem;
-  padding: 1.5rem 2rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  padding: 1.75rem 2rem;
 `;
 
 export const mixinHeading = css`

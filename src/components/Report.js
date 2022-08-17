@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { mixinBlock, mixinHeading, mixinText } from "../mixins";
+import ExpensesBarChart from "./ExpensesBarChart";
 
 export const MonthlyLabel = styled.p`
   ${mixinText}
@@ -8,7 +9,7 @@ export const MonthlyLabel = styled.p`
 
 export const MonthlyNet = styled.p`
   ${mixinHeading}
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   margin: 0;
 `;
 
@@ -18,6 +19,7 @@ export const MonthlyBox = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+  text-align: right;
 `;
 
 export const TotalAmt = styled.h1`
@@ -45,17 +47,18 @@ export const Box = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  gap: 1rem;
 `;
 
 export const Divider = styled.hr`
   width: 100%;
   opacity: 0.3;
-  margin: 1.5rem 0;
+  margin: 1.25rem 0 1.65rem;
 `;
 
 export const Heading = styled.h1`
   ${mixinHeading}
-  font-size: clamp(1.5rem, 4vw, 1.75rem);
+  font-size: clamp(1.15rem, 5vw, 1.75rem);
   margin: 0;
 `;
 
@@ -73,6 +76,7 @@ const Report = ({ className }) => {
   return (
     <ReportBox className={className}>
       <Heading>Spending - Last 7 days</Heading>
+      <ExpensesBarChart />
       <Divider />
       <Box>
         <TotalBox>

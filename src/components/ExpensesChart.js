@@ -8,8 +8,8 @@ export const ExpensesChartContainer = styled.div`
   justify-content: flex-start;
   align-items: center;
   gap: 1.5rem;
-  width: clamp(20rem, 90vw, 35rem);
-  margin: 2rem;
+  width: clamp(15rem, 90vw, 35rem);
+  margin: 3.5rem;
 `;
 
 const ExpensesChart = ({ className }) => {

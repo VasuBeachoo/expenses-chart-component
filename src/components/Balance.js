@@ -6,7 +6,7 @@ export const Logo = styled.img.attrs({ src: logo, alt: "logo" })``;
 
 export const BalanceAmt = styled.p`
   color: var(--Cream);
-  font-size: 1.75rem;
+  font-size: 1.8rem;
   font-weight: 700;
   margin: 0;
 `;
